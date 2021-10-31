@@ -1,0 +1,265 @@
+
+  	*{
+  		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-size: 16px;
+  	}
+
+
+
+
+body{
+ font-family: cursive ;
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: mediumspringgreen;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+    
+
+}
+header {
+	width: 70%;
+	height:13em;
+	background-color: rgba(30,156,0,0.4) ;
+	position: relative;
+	border-radius:5%;
+	margin: 0 auto;
+
+}
+
+ header h1{
+   position: absolute;
+   text-align:center;
+   left:5%;
+   right:5%;
+   top:0;
+   color: rgba(30,156,0,0.7);
+   font-size: 8em;
+   font-family: cursive;
+
+}
+
+#container{
+	width:70%;
+	height: 15em;
+	margin: 1.7em auto;
+	display:grid;
+	grid-template-columns: 30% 50% 20% ;
+}
+
+
+    #hang {
+      height: 15em;
+      position: relative;
+      border-left: 0.625em solid;
+      border-top: 0.625em solid;
+      width: 10em;
+    }
+
+    #word{
+    	display:grid;
+    	grid-template-columns: repeat(25 ,1fr);
+    	grid-gap: 0.2em;
+    	
+    }
+    .letter p{
+    	font-size: 2em;
+    	font-family: cursive;
+    	color:#786c5f;
+
+    }
+    
+
+    #hang #vertical{
+     	background-color:black;
+     	width:0.625em;
+     	position: absolute;
+     	height: 2.4em;
+     	left: 70%;
+     }
+      #hang #head{
+     	background-color:rgba(255,255,0);
+     	width:2em;
+     	position: absolute;
+     	height:3em;
+     	left: 62.7%;
+     	top:16%;
+     	border-radius: 50%;
+     	visibility: hidden;
+     }
+
+      #hang #body{
+     	background-color:rgba(255,255,0);
+     	width:4em;
+     	position: absolute;
+     	height:4em;
+     	left: 52.7%;
+     	top:36%;
+     	visibility: hidden;
+     	
+     }
+
+     #hang #rightHand {
+        width: 5em;
+        height: 5em;
+        border-bottom: 1em solid rgba(255,255,0);
+        -webkit-transform:
+            translateY(-1em)
+            translateX(0.5em)
+            rotate(60deg); 
+        position: absolute;
+        left:90%;
+        top:35.4%;
+        visibility: hidden;
+       
+    }
+
+    #hang #leftHand {
+        width: 5em;
+        height: 5em;
+        border-bottom: 1em solid rgba(255,255,0);
+        -webkit-transform:
+            translateY(1em)
+            translateX(0.5em)
+            rotate(-59deg); 
+        position: absolute;
+        left:-7%;
+        top:22%;
+        visibility: hidden;
+    }
+
+     #hang #rightLeg{
+        background-color:rgba(255,255,0);
+     	width:1.5em;
+     	position: absolute;
+     	height: 5em;
+     	left: 79.5%;
+     	top:61%;
+     	visibility: hidden;
+       
+    }
+
+    #hang #leftLeg {
+       background-color:rgba(255,255,0);
+     	width:1.5em;
+     	position: absolute;
+     	height: 5em;
+     	left: 53%;
+     	top:61%;
+     	visibility: hidden;
+    }
+
+    #keyboard{
+    	
+    	border-radius: 2em;
+    	z-index:-1;
+    	width:70%;
+    	height:13em;
+    	display: grid ;
+    	grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+ 		grid-gap: 1em;
+    	margin: 2em auto;
+    	justify-content: center;
+  		align-items: center;
+    }
+
+    .key{
+
+    	width: 3em;
+    	height: 3em;
+    	background-color: rgba(255,255, 255, 0.8);
+    	border-radius: 50%;
+    	text-align: center;
+ 
+    }
+
+    .key:hover{
+    
+    	background-color: rgba(255,255, 255);
+    	border-radius: 50%;
+    	text-align: center;
+    	cursor:pointer;
+    }
+    .key p{
+    	color: black;
+    	font-size: 2em;
+    }
+
+    #score {
+    	display:grid;
+    	grid-template-rows: repeat(6 ,1fr);
+    	justify-content: center;
+    	text-align: center;
+    	
+
+    }
+
+    #hint{
+    	width:10em;
+    	height:2em;
+    	background-color: rgba(100,255, 0.7);
+    	border-radius: 1em;
+    	cursor:pointer;
+    }
+
+    #hint:hover{
+    	background-color: rgba(100,255,0,0.6);
+    }
+
+
+    #reset{
+    	width:10em;
+    	height:2em;
+    	background-color: rgba(255,0,50, 0.7);
+    	border-radius: 1em ;
+    	cursor: pointer;
+    }
+
+    #reset:hover{
+    	background-color: rgba(255,0,50, 0.6);	
+    }
+
+    .textButton{
+    	letter-spacing: 0.1em;
+
+    }
+
+    .italicGreen{
+    	color:purple;
+    	font-family: cursive;
+    	font-weight: bold;
+    	font-size: 2em;
+
+    }
+    .green{
+    	color: green;
+    }
+
+    .orange{
+    	color: orange;
+    }
+
+    .bold{
+    	font-weight: bold;
+    }
+    .cursive{
+    	font-family: cursive;
+    }
+    .top{
+    	padding-top: 2em;
+    }
+
+    #modalButton{
+    	width:10em;
+    	height:2em;
+    	background-color: rgba(255,255,255, 0.7);
+    	border-radius: 1em;
+    	font-weight: bold;
+    	cursor:pointer;
+    }
+
+    #modalButton:hover{
+    	background-color: rgba(255,255,255, 0.6);
+    	
+    }

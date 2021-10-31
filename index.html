@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hangman</title>
+		<link rel="icon" type="image/gif/png" href="./title.jpg">
+		<link type="text/css" href="./style.css" rel="stylesheet"/>
+		<link type="text/css" href="./modal.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header>
+			<h1>Hangman</h1>
+
+	   </header>
+
+	   <div id ="container">
+		  	 <div id="hang">
+		  	 	<div id="vertical"></div>
+		  	 	<div id="head"></div>
+		  	 	<div id="body"></div>
+		  	 	<div id="rightHand"></div>
+		  	 	<div id="leftHand"></div>
+		  	 	<div id="rightLeg"></div>
+		  	 	<div id="leftLeg"></div>
+		  	 </div>
+
+		  	 <div id="word"></div>	
+		  	 <div id="score">
+		  	 	<button id="modalButton" data-modal-target="#modal">How To Play</button>
+		  	 	<p class="italicGreen"></p>
+		  	 	<p class="italicGreen"></p>
+		  	 	<p class="italicGreen"></p>
+		  	 	
+		  	 	<button id="hint" name="hint" onclick="useHint();"><strong><span class=textButton>Hint</span></strong></button>
+		  	 	<button id="reset" name="reset" onclick="resetGame();"><strong><span class=textButton>Reset Progress</span></strong></button>
+		  	 </div>
+		  	 
+	  	
+	   </div>
+
+	   <div id="keyboard"> </div>
+	   	     
+	  	<div class = "sounds">
+  			<audio id="correct" src="./audio/correct.mp3"></audio>
+  		  	<audio id="incorrect" src="./audio/incorrect.mp3"></audio>
+  		   	<audio id="wrong" src="./audio/wrong.mp3"></audio>
+  		   	<audio id="victory" src="./audio/victory.mp3"></audio>
+	  	</div>
+		
+
+	  	
+		 <div class="modal" id="modal">
+    		<div class="modal-header">
+     	 <div class="title"><span class = "green bold">HOW TO PLAY</span></div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+       <p class ="cursive"> 
+		<span class = "orange bold ">The Game</span><br>
+		Hangman is a classic word game in which you must guess the secret word one letter at a time. 
+		Guess one letter at a time to reveal the secret word.
+		Each incorrect guess adds another part to the hangman. You only get 6 incorrect guesses.<br><br>
+		<span class = "orange bold ">The Points</span><br>
+		You can score up to 2 points for each correct word. If you get 5 correct answers in a row, you'll get 5 more extra points.  Try to keep your streak going!<br><br>
+		<span class = "orange bold">Hints</span><br>
+		If you need help finding a word, click the Hint button .
+		Each hint costs 1 point  from the maximum points that you can win(2).
+		You can use up to 2 hints per round.
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+	</body>
+	<script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" src="./modal.js"></script>
+
+</html>
