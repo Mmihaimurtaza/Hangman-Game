@@ -73,7 +73,7 @@ const readTheKeyPressed = (l) =>{
 	}
 
 	else{
-		playSound("wrong");
+		playSound("incorrect");
 	}
 	
 	
