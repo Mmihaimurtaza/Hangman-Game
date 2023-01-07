@@ -148,7 +148,8 @@ const isLetterInWord = (word, letter) =>{
 		if(wrongLetters === 7){
 			streak = 0;
 			finalRound = true;
-			playSound("wrong");
+			playSound("wrong"); 
+
 		}
 		playSound("incorrect"); 
 	}
